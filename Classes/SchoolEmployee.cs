@@ -7,18 +7,10 @@ using HW_PrototypePattern.Interfaces;
 
 namespace HW_PrototypePattern.Classes
 {
-    public class SchoolEmployee: Person, IMyCloneable<SchoolEmployee>, ICloneable
+    public abstract class SchoolEmployee : Person
     {
         public string School { get; set; }
 
-        public SchoolEmployee MyClone()
-        {
-            return new SchoolEmployee { Name = this.Name, Age = this.Age, School = this.School };
-        }
-        public object Clone()
-        {
-            return this.MyClone();
-        }
         public override string ToString()
         {
             return "SchoolEmployee";

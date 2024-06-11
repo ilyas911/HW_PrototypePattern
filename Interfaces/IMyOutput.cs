@@ -9,13 +9,6 @@ namespace HW_PrototypePattern.Interfaces
 {
     public interface IMyOutput<T>
     {
-        void MyOutput(T item)
-        {
-
-        }
-        void MyOutput(object item)
-        {
-
-        }
+        void MyOutput(T item);
     }
 }
